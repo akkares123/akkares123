@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./halaman.css">
+    <link rel="icon" href="./images.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Caveat:wght@400..700&family=Chicle&family=DynaPuff:wght@400..700&family=Inconsolata:wght@200..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Montenegrin+Gothic+One&family=Oswald:wght@200..700&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+  
+    <title>Printt Siulan</title>
+</head>
+<body>
+  <div>
+
+  <img class="gambar" src="./print.png" alt="printer">
+
+</div>
+
+
+<div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="arahhteks">
+<h3 class="akaya">Silahkan Menekan Tombol Print Tersebutt :3</h3>
+<br/>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+<div id="button">
+
+<button class="teksss3"   onclick="mulai()">BERSIUL!</button>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="kirii">
+
+
+
+<a id="akbarsigma" href="../index.html">Silahkan Kembalii :D</a>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+function mulai() {
+  navigator.mediaDevices.getUserMedia({audio:true}).then(stream => {
+    const audio = new AudioContext();
+    const mic = audio.createMediaStreamSource(stream);
+    const analyser = audio.createAnalyser();
+    
+    mic.connect(analyser);
+
+    setInterval(() => {
+      const data = new Uint8Array(analyser.frequencyBinCount);
+      analyser.getByteFrequencyData(data);
+
+      if (Math.max(...data) > 200) {
+        stream.getTracks().forEach(track => track.stop());
+        audio.close(); 
+        window.print();     
+       alert("Siulan terdeteksi!");
+      }
+    }, 100);
+  });
+}
+</script>
+
+
+
+
+
+
+
+
+
+<footer>@M.AkbarSyahh 
+  <br/>mine_carftgamer 
+  <br/>akkares123 </footer>
+
+
+
+</body>
+</html>

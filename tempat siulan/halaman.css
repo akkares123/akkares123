@@ -1,0 +1,68 @@
+body{
+background-image: url(./1369866.png);
+
+
+}
+
+
+.gambar{
+    height: 90px;
+    width: 90px;
+    float: left;
+    
+}
+
+.akaya {
+  font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: antiquewhite;
+  font-size: 30px;
+}
+
+
+#arahhteks{
+margin-left: 500px;
+
+
+
+
+}
+
+#button{
+margin-left: 700px;
+
+}
+
+
+.teksss3{
+     font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+    font-style: normal;
+    background-color: burlywood;
+    font-size: 20px;
+}
+
+
+footer{ 
+color: azure;
+margin-top: 500px;
+text-align: center;
+float: right;
+
+
+}
+
+
+#akbarsigma{
+    font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+    font-style: normal;
+color: bisque;
+font-size: 20px;
+
+}
+
+.kerennn{
+
+}
